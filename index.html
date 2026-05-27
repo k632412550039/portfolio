@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary SEO Tags -->
+  <title>Phạm Thanh Hà | Marketing Intern Portfolio</title>
+  <meta name="title" content="Phạm Thanh Hà | Marketing Intern Portfolio">
+  <meta name="description" content="Portfolio chuyên nghiệp của Phạm Thanh Hà - Sinh viên chuyên ngành Kinh doanh Quốc tế tại Đại học Ngoại thương (FTU). Ứng tuyển vị trí Marketing Intern với định hướng phát triển bản thân và đóng góp cho doanh nghiệp.">
+  <meta name="keywords" content="Phạm Thanh Hà, Marketing Intern, Đại học Ngoại thương, FTU, Kinh doanh Quốc tế, IELTS 7.0, Portfolio Ghibli">
+  <meta name="author" content="Phạm Thanh Hà">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Phạm Thanh Hà | Marketing Intern Portfolio">
+  <meta property="og:description" content="Khám phá hành trình học tập, kinh nghiệm dự án và kỹ năng chuyên môn của Phạm Thanh Hà trong phong cách thiết kế Ghibli ấn tượng.">
+  <meta property="og:image" content="avatar.jpg">
+
+  <!-- FontAwesome & Icon Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background overlay structures for Ghibli aesthetic -->
+  <div class="starry-background" id="starry-bg"></div>
+  <canvas id="leaves-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <i class="fa-solid fa-seedling"></i>
+        <span>Thanh Hà.</span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" id="lnk-about"><i class="fa-regular fa-user"></i> Giới Thiệu</a></li>
+          <li><a href="#experience" id="lnk-experience"><i class="fa-regular fa-compass"></i> Kinh Nghiệm</a></li>
+          <li><a href="#education" id="lnk-education"><i class="fa-solid fa-graduation-cap"></i> Học Vấn</a></li>
+          <li><a href="#skills" id="lnk-skills"><i class="fa-solid fa-sliders"></i> Kỹ Năng</a></li>
+          <li><a href="#contact" id="lnk-contact"><i class="fa-regular fa-envelope"></i> Liên Hệ</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-btn" aria-label="Toggle Night Mode" title="Bật/Tắt bầu trời đêm">
+          <i class="fa-regular fa-sun" id="theme-icon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="hero-parallax-bg"></div>
+      <div class="hero-overlay"></div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-pretitle">Xin chào, tôi là</span>
+          <h1 class="hero-title" id="main-heading">Phạm Thanh Hà</h1>
+          <p class="hero-subtitle">Marketing Intern | Sinh viên Ngoại thương (FTU)</p>
+          <p class="hero-desc">
+            Với nền tảng chuyên ngành Kinh doanh Quốc tế năng động cùng tư duy sáng tạo, tôi luôn nỗ lực học hỏi để mang lại những giá trị thiết thực nhất cho hoạt động Marketing của doanh nghiệp.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" id="btn-hero-contact">
+              <i class="fa-regular fa-paper-plane"></i> Kết nối ngay
+            </a>
+            <a href="Blue Simple Professional CV Resume.pdf" target="_blank" class="btn btn-secondary" id="btn-hero-cv">
+              <i class="fa-regular fa-file-pdf"></i> Xem CV Bản in
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-avatar">
+          <div class="watercolor-glow"></div>
+          <div class="avatar-frame">
+            <img src="avatar.jpg" alt="Phạm Thanh Hà Avatar" class="avatar-img" id="avatar-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Objectives Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title"><i class="fa-regular fa-compass section-title-icon"></i>Mục Tiêu Nghề Nghiệp</h2>
+        
+        <div class="about-grid reveal">
+          <div class="about-intro-card">
+            <span class="about-tag">Về tôi</span>
+            <p class="about-intro-text">
+              Tôi là một người trẻ nhiệt huyết, có khả năng quản lý thời gian khoa học và tính cam kết cao trong công việc. Bằng kiến thức nền tảng vững vàng và tư duy sẵn sàng thích nghi, tôi mong muốn được rèn luyện thực chiến để cống hiến cho các chiến dịch truyền thông sáng tạo.
+            </p>
+          </div>
+          
+          <div class="objectives-container">
+            <div class="objective-card">
+              <div class="objective-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="objective-details">
+                <h3 class="objective-title">Mục Tiêu Ngắn Hạn</h3>
+                <p class="objective-desc">
+                  Tích cực học hỏi các kiến thức thực tế, trau dồi sâu hơn các kỹ năng chuyên môn về nghiên cứu thị trường, sáng tạo nội dung và chạy chiến dịch trong lĩnh vực Marketing.
+                </p>
+              </div>
+            </div>
+            
+            <div class="objective-card">
+              <div class="objective-icon">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <div class="objective-details">
+                <h3 class="objective-title">Mục Tiêu Dài Hạn</h3>
+                <p class="objective-desc">
+                  Rèn luyện bản lĩnh để trở thành một nhân sự chính thức xuất sắc, đóng góp giá trị bền vững và đồng hành lâu dài cùng sự phát triển mạnh mẽ của doanh nghiệp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-leaf section-title-icon"></i>Kinh Nghiệm Làm Việc</h2>
+        
+        <div class="timeline reveal">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 (Đang diễn ra)</span>
+              <h3 class="timeline-role">Người Sáng Lập Dự Án</h3>
+              <span class="timeline-org"><i class="fa-solid fa-users-gear"></i> Dự án "Spread the Fire of Hope" — Ký Ức Hoa Lửa Project</span>
+              <ul class="timeline-details">
+                <li>Xây dựng và phát triển nội dung truyền tải câu chuyện phản chiến, tinh thần đấu tranh dân tộc giàu cảm xúc và đầy tính lan tỏa.</li>
+                <li>Tiếp cận và gặt hái hơn 1,000 lượt tương tác, tiếp cận mạnh mẽ trên các nền tảng mạng xã hội phổ biến (Facebook và TikTok).</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024</span>
+              <h3 class="timeline-role">Thành Viên Hỗ Trợ Sự Kiện</h3>
+              <span class="timeline-org"><i class="fa-regular fa-lightbulb"></i> Sự kiện "Happy 26/3 - Happy 18" — THPT Việt Đức</span>
+              <ul class="timeline-details">
+                <li>Tham gia chuẩn bị sân khấu, lắp đặt và kiểm tra hệ thống âm thanh, ánh sáng chất lượng cho toàn bộ sự kiện.</li>
+                <li>Đảm nhiệm hậu cần chu đáo: chuẩn bị nước uống, tài liệu chương trình và bố trí các băng rôn truyền thông đúng tiến độ.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 (1 Tháng)</span>
+              <h3 class="timeline-role">Thực Tập Sinh Quan Sát</h3>
+              <span class="timeline-org"><i class="fa-solid fa-cubes"></i> Công ty TNHH Sống Thiện Hành Thiện</span>
+              <ul class="timeline-details">
+                <li>Quan sát thực tiễn và tìm hiểu sâu sát quy trình vận hành chuỗi cung ứng, logistics nội bộ của doanh nghiệp.</li>
+                <li>Tích lũy tư duy hệ thống và cách thức phối hợp nhịp nhàng giữa các phòng ban trong môi trường doanh nghiệp thực tế.</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-graduation-cap section-title-icon"></i>Học Vấn & Thành Tích</h2>
+        
+        <div class="education-container reveal">
+          <div class="education-main">
+            <span class="year-badge"><i class="fa-regular fa-calendar-check"></i> Niên khóa 2024 - 2028</span>
+            <h3 class="school-name">Đại Học Ngoại Thương (FTU)</h3>
+            <span class="degree-major"><i class="fa-solid fa-award"></i> Chuyên ngành Kinh doanh Quốc tế</span>
+            <p class="degree-desc">
+              Học tập trong môi trường năng động bậc nhất, trang bị tư duy kinh tế toàn cầu, phân tích thị trường quốc tế cùng các kỹ năng quản trị hiện đại.
+            </p>
+          </div>
+          
+          <div class="education-achievements">
+            <!-- Achievement 1 -->
+            <div class="achievement-card">
+              <div class="achievement-icon-circle">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="achievement-details">
+                <h4>Chứng Chỉ IELTS 7.0</h4>
+                <p>Khả năng giao tiếp tiếng Anh trôi chảy, nghiên cứu tài liệu nước ngoài và làm việc trong môi trường đa văn hóa.</p>
+              </div>
+            </div>
+            
+            <!-- Achievement 2 -->
+            <div class="achievement-card">
+              <div class="achievement-icon-circle">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <div class="achievement-details">
+                <h4>Chứng Chỉ HSK 3 & HSKK Sơ Cấp</h4>
+                <p>Sử dụng thành thạo tiếng Trung cơ bản, tự tin trong giao dịch xã hội thông thường và trao đổi văn hóa cơ bản.</p>
+              </div>
+            </div>
+            
+            <!-- Achievement 3 -->
+            <div class="achievement-card">
+              <div class="achievement-icon-circle">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="achievement-details">
+                <h4>Đạt 101/150 môn Kinh Tế</h4>
+                <p>Điểm số ấn tượng trong kỳ thi Tốt nghiệp THPT Quốc gia môn Kinh tế, chứng minh tư duy phân tích nhạy bén.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-sliders section-title-icon"></i>Kỹ Năng Nổi Bật</h2>
+        
+        <div class="skills-grid reveal">
+          
+          <!-- Category 1 -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <div class="skills-header-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="skills-title">Tin Học Văn Phòng</h3>
+            </div>
+            <div class="skills-content">
+              <span class="skill-badge"><i class="fa-regular fa-file-excel"></i> Microsoft Excel</span>
+              <span class="skill-badge"><i class="fa-regular fa-file-powerpoint"></i> PowerPoint</span>
+              <span class="skill-badge"><i class="fa-regular fa-file-word"></i> Microsoft Word</span>
+              <span class="skill-badge"><i class="fa-solid fa-square-poll-vertical"></i> Google Forms</span>
+              <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Google Drive Suite</span>
+            </div>
+          </div>
+          
+          <!-- Category 2 -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <div class="skills-header-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <h3 class="skills-title">Ngoại Ngữ</h3>
+            </div>
+            <div class="skills-content">
+              <span class="skill-badge"><i class="fa-solid fa-check"></i> Tiếng Anh (IELTS 7.0)</span>
+              <span class="skill-badge"><i class="fa-solid fa-check"></i> Tiếng Trung (HSK 3)</span>
+              <span class="skill-badge"><i class="fa-solid fa-check"></i> Giao tiếp quốc tế</span>
+            </div>
+          </div>
+          
+          <!-- Category 3 -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <div class="skills-header-icon">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <h3 class="skills-title">Quản Lý Thời Gian</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skills-list-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="skills-list-text">Sắp xếp công việc khoa học theo thứ tự ưu tiên (Ma trận Eisenhower).</span>
+              </div>
+              <div class="skills-list-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="skills-list-text">Cam kết hoàn thành đúng hạn mọi nhiệm vụ học tập và công việc được giao.</span>
+              </div>
+              <div class="skills-list-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="skills-list-text">Phân bổ thời gian cân bằng hiệu quả giữa dự án cá nhân và học tập.</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title"><i class="fa-regular fa-envelope section-title-icon"></i>Liên Hệ Gửi Tin nhắn</h2>
+        
+        <div class="contact-card reveal" id="contact-details-card">
+          <!-- Information Panel -->
+          <div class="contact-info-panel">
+            <i class="fa-solid fa-cloud contact-cloud-dec"></i>
+            
+            <div class="contact-info-header">
+              <h3 class="contact-info-title">Hãy Trò Chuyện!</h3>
+              <p class="contact-info-subtitle">Tôi luôn sẵn lòng kết nối và đón nhận những cơ hội hợp tác mới.</p>
+            </div>
+            
+            <ul class="contact-links-list">
+              <li class="contact-link-item">
+                <a href="tel:0983102776" class="contact-link-item" id="link-phone">
+                  <div class="contact-icon-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Điện thoại</span>
+                    <p class="contact-value" id="val-phone">0983 102 776</p>
+                  </div>
+                </a>
+              </li>
+              
+              <li class="contact-link-item">
+                <a href="mailto:pthanhha2510@gmail.com" class="contact-link-item" id="link-email">
+                  <div class="contact-icon-box">
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Email</span>
+                    <p class="contact-value" id="val-email">pthanhha2510@gmail.com</p>
+                  </div>
+                </a>
+              </li>
+              
+              <li class="contact-link-item">
+                <div class="contact-link-item">
+                  <div class="contact-icon-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Địa điểm</span>
+                    <p class="contact-value">Hà Nội, Việt Nam</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Message Form Panel -->
+          <div class="contact-form-panel">
+            <h3 class="form-title">Gửi lời nhắn cho tôi</h3>
+            <form action="#" method="POST" id="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-input" id="inp-name" placeholder="Tên của bạn" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" id="inp-email" placeholder="Email liên hệ" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-input" id="inp-subject" placeholder="Tiêu đề lời nhắn" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-input" id="inp-message" placeholder="Nội dung lời nhắn của bạn..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%; justify-content: center;">
+                <i class="fa-regular fa-paper-plane"></i> Gửi Tin Nhắn
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <i class="fa-solid fa-seedling"></i>
+        <span>Phạm Thanh Hà</span>
+      </div>
+      <p class="footer-quote">"The wind is rising! We must try to live!" — Ghibli's The Wind Rises</p>
+      <p class="footer-copyright">&copy; 2026 Phạm Thanh Hà. Thiết kế Ghibli Professional. Mọi quyền được bảo lưu.</p>
+    </div>
+  </footer>
+
+  <!-- Script Integration -->
+  <script src="script.js"></script>
+</body>
+</html>
